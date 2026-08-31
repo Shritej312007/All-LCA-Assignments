@@ -1,1 +1,110 @@
+#List
+#Q1
+numbers = [10, 20, 30, 40, 50]
+
+print("The list is:", numbers)
+
+print("First element:", numbers[0])
+print("Second element:", numbers[1])
+print("Third element:", numbers[2])
+print("Fourth element:", numbers[3])
+print("Fifth element:", numbers[4])
+
+#Q2
+numbers = [10, 20, 30, 40, 50]
+numbers.append(60)
+print("List after adding a new item:", numbers)
+
+#Q3
+numbers = [10, 20, 30, 40, 50]
+numbers.reverse()
+print("Reversed list:", numbers)
+
+#Q4
+numbers = [10, 20, 10, 30, 10, 40]
+element = 10
+count = numbers.count(element)
+print("The number", element, "occurs", count, "times.")
+
+#Q5
+list1 = [10, 20, 30]
+list2 = [40, 50, 60]
+list2 = list1 + list2
+print("List after adding list1 in front of list2:", list2)
+
+#Q6
+numbers = [10, 20, 30, 40, 50]
+numbers.insert(1, 15)
+print("List after inserting the new item:", numbers)
+
+#Q7
+numbers = [10, 20, 30, 40, 50]
+index = 2
+numbers.pop(index)
+print("List after removing the item:", numbers)
+
+#Q8
+numbers = [10, 20, 30, 20, 40, 50]
+element = 20
+numbers.remove(element)
+print("List after removing the first occurrence:", numbers)
+
+#Q9
+
+#a
+#b
+#c
+
+
+#Q10
+l = []
+for i in range(10):
+    n = int(input())
+    l.append(n)
+#a
+l.sort()
+print(l)
+
+#b
+l.sort(reverse=True)
+print(l)
+
+#c
+print(len(l))
+
+#Q11
+n1 = input("Enter elements of list 1:")
+n2 = input("Enter elements of list 2:")
+l1 = list(n1)
+l2 = list(n2)
+l3 = l1+l2
+print("list 1:",l1,"\tlist 2:",l2)
+print("list 3:",l3)
+
+#Q12
+n = input("Type a phrase:")
+l = n.split()
+store = ''
+for i in l:
+    store+= i[0].capitalize()
+print("The  acronym is :",store)
+
+#Q13
+months = ["Jan","Feb","Mar","Apr","May","Jun","July","Aug","Sept","Oct","Nov","Dec"]
+n = int(input("Enter number between 1-12:"))
+print(months[n-1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
