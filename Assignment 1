@@ -94,7 +94,102 @@ months = ["Jan","Feb","Mar","Apr","May","Jun","July","Aug","Sept","Oct","Nov","D
 n = int(input("Enter number between 1-12:"))
 print(months[n-1])
 
+#Dictionary
+#Q1
+d={0:10,1:20}
+d[2]=30
+print(d)
 
+#Q2
+d1 = {1:10,2:20}
+d2 = {3:30,4:40}
+d3 = {5:50,6:60}
+.
+.
+.
+.
+.
+.
+
+
+#Q3
+marks = { "shritej": 78, "chirag": 85, "rahul": 67,"sahil": 91,"sneha": 74,"priyal": 88}
+if "shritej" in marks:
+    print("Yes")
+else:
+    print("No")
+
+
+#Q4
+marks = { "shritej": 78, "chirag": 85, "rahul": 67,"sahil": 91,"sneha": 74,"priyal": 88}
+print("Keys are:")
+for keys in marks:
+    print(keys,end=" ")
+print()
+print("Values are:")
+for key in marks:
+    print(marks[key],end=" ")
+print()
+print("Key:Value format:")
+for key,values in marks.items():
+    print(key,":",values)
+
+
+#Q5
+d = {}
+for i in range(1,16):
+    d[i]=i*i
+print(d)
+
+
+#Q6
+marks = { "shritej": 78, "chirag": 85, "rahul": 67,"sahil": 91,"sneha": 74,"priyal": 88}
+sum=0
+for value in marks.values():
+    sum+=value
+print("Sum of values is:",sum)
+
+
+#Q7
+marks = { "shritej": 78, "chirag": 85, "rahul": 67,"sahil": 91}
+marks["shreya"]=93 #added
+print(marks)
+del marks["rahul"] #deleted student information
+print(marks)
+
+
+#Q8
+names = ["shritej", "chirag", "rahul", "sahil", "sneha", "priyal"]
+marks = [78, 85, 67, 91, 74, 88]
+d = {}
+
+
+
+
+#Q9
+marks = { "shritej": 78, "chirag": 85, "rahul": 67,"sahil": 91}
+l1=[]
+l2=[]
+for key,value in marks.items():
+    l1.append(key)
+    l2.append(value)
+print(l1)
+print(l2)
+
+
+#Q10
+marks = { "shritej": 78, "chirag": 85, "rahul": 67,"sahil": 91}
+sum=0
+for key,value in marks.items():
+    sum+=value
+mean = sum/len(marks)
+print(mean)
+
+
+#Q11
+my_dict= {'name':'ABC', 'panel':'B', 'rollno':34, 'marks':[65,87,67,94]}
+sorted_my_dict = dict(sorted(my_dict.items()))
+print(sorted_my_dict)
 
 
 
