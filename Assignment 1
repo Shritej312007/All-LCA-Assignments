@@ -1,205 +1,123 @@
-#List
-#Q1
-numbers = [10, 20, 30, 40, 50]
+# 1. LISTS IN PYTHON
 
-print("The list is:", numbers)
+fruits = ["Apple", "Banana", "Mango", "Apple"]
 
-print("First element:", numbers[0])
-print("Second element:", numbers[1])
-print("Third element:", numbers[2])
-print("Fourth element:", numbers[3])
-print("Fifth element:", numbers[4])
-
-#Q2
-numbers = [10, 20, 30, 40, 50]
-numbers.append(60)
-print("List after adding a new item:", numbers)
-
-#Q3
-numbers = [10, 20, 30, 40, 50]
-numbers.reverse()
-print("Reversed list:", numbers)
-
-#Q4
-numbers = [10, 20, 10, 30, 10, 40]
-element = 10
-count = numbers.count(element)
-print("The number", element, "occurs", count, "times.")
-
-#Q5
-list1 = [10, 20, 30]
-list2 = [40, 50, 60]
-list2 = list1 + list2
-print("List after adding list1 in front of list2:", list2)
-
-#Q6
-numbers = [10, 20, 30, 40, 50]
-numbers.insert(1, 15)
-print("List after inserting the new item:", numbers)
-
-#Q7
-numbers = [10, 20, 30, 40, 50]
-index = 2
-numbers.pop(index)
-print("List after removing the item:", numbers)
-
-#Q8
-numbers = [10, 20, 30, 20, 40, 50]
-element = 20
-numbers.remove(element)
-print("List after removing the first occurrence:", numbers)
-
-#Q9
-
-#a
-#b
-#c
+print("Original List:", fruits)
 
 
-#Q10
-l = []
-for i in range(10):
-    n = int(input())
-    l.append(n)
-#a
-l.sort()
-print(l)
+# 1. append()
+# Adds a new item to the end of the list.
 
-#b
-l.sort(reverse=True)
-print(l)
-
-#c
-print(len(l))
-
-#Q11
-n1 = input("Enter elements of list 1:")
-n2 = input("Enter elements of list 2:")
-l1 = list(n1)
-l2 = list(n2)
-l3 = l1+l2
-print("list 1:",l1,"\tlist 2:",l2)
-print("list 3:",l3)
-
-#Q12
-n = input("Type a phrase:")
-l = n.split()
-store = ''
-for i in l:
-    store+= i[0].capitalize()
-print("The  acronym is :",store)
-
-#Q13
-months = ["Jan","Feb","Mar","Apr","May","Jun","July","Aug","Sept","Oct","Nov","Dec"]
-n = int(input("Enter number between 1-12:"))
-print(months[n-1])
-
-#Dictionary
-#Q1
-d={0:10,1:20}
-d[2]=30
-print(d)
-
-#Q2
-d1 = {1:10,2:20}
-d2 = {3:30,4:40}
-d3 = {5:50,6:60}
-.
-.
-.
-.
-.
-.
+fruits.append("Orange")
+print("After append():", fruits)
 
 
-#Q3
-marks = { "shritej": 78, "chirag": 85, "rahul": 67,"sahil": 91,"sneha": 74,"priyal": 88}
-if "shritej" in marks:
-    print("Yes")
-else:
-    print("No")
+# 2. insert()
+# Adds an item at a specified position.
+
+fruits.insert(1, "Grapes")
+print("After insert():", fruits)
 
 
-#Q4
-marks = { "shritej": 78, "chirag": 85, "rahul": 67,"sahil": 91,"sneha": 74,"priyal": 88}
-print("Keys are:")
-for keys in marks:
-    print(keys,end=" ")
-print()
-print("Values are:")
-for key in marks:
-    print(marks[key],end=" ")
-print()
-print("Key:Value format:")
-for key,values in marks.items():
-    print(key,":",values)
+# 3. remove()
+# Removes the first occurrence of a specified item.
+
+fruits.remove("Apple")
+print("After remove():", fruits)
 
 
-#Q5
-d = {}
-for i in range(1,16):
-    d[i]=i*i
-print(d)
+# 4. pop()
+# Removes an item from a specified index.
+
+fruits.pop(2)
+print("After pop():", fruits)
 
 
-#Q6
-marks = { "shritej": 78, "chirag": 85, "rahul": 67,"sahil": 91,"sneha": 74,"priyal": 88}
-sum=0
-for value in marks.values():
-    sum+=value
-print("Sum of values is:",sum)
+# 5. reverse()
+# Reverses the order of the items in the list.
 
-
-#Q7
-marks = { "shritej": 78, "chirag": 85, "rahul": 67,"sahil": 91}
-marks["shreya"]=93 #added
-print(marks)
-del marks["rahul"] #deleted student information
-print(marks)
-
-
-#Q8
-names = ["shritej", "chirag", "rahul", "sahil", "sneha", "priyal"]
-marks = [78, 85, 67, 91, 74, 88]
-d = {}
+fruits.reverse()
+print("After reverse():", fruits)
 
 
 
+# 2. TUPLES IN PYTHON
 
-#Q9
-marks = { "shritej": 78, "chirag": 85, "rahul": 67,"sahil": 91}
-l1=[]
-l2=[]
-for key,value in marks.items():
-    l1.append(key)
-    l2.append(value)
-print(l1)
-print(l2)
+numbers = (10, 20, 30, 20, 40)
+
+print("Tuple:", numbers)
 
 
-#Q10
-marks = { "shritej": 78, "chirag": 85, "rahul": 67,"sahil": 91}
-sum=0
-for key,value in marks.items():
-    sum+=value
-mean = sum/len(marks)
-print(mean)
+# 1. count()
+# Returns the number of times a specified item occurs.
+
+print("Count of 20:", numbers.count(20))
 
 
-#Q11
-my_dict= {'name':'ABC', 'panel':'B', 'rollno':34, 'marks':[65,87,67,94]}
-sorted_my_dict = dict(sorted(my_dict.items()))
-print(sorted_my_dict)
+# 2. index()
+# Returns the index of the first occurrence of an item.
+
+print("Index of 30:", numbers.index(30))
 
 
+# Since tuples are immutable, they have only two main
+# built-in methods: count() and index().
+
+# 3. len()
+# Returns the number of items in the tuple.
+
+print("Length of tuple:", len(numbers))
 
 
+# 4. max()
+# Returns the largest item in the tuple.
+
+print("Largest number:", max(numbers))
 
 
+# 5. min()
+# Returns the smallest item in the tuple.
+
+print("Smallest number:", min(numbers))
 
 
+# 3. DICTIONARIES IN PYTHON
+
+student = {
+    "name": "Shritej",
+    "age": 18,
+    "marks": 85
+}
+
+print("Original Dictionary:", student)
 
 
+# 1. keys()
+# Returns all the keys in the dictionary.
+
+print("Keys:", student.keys())
 
 
+# 2. values()
+# Returns all the values in the dictionary.
 
+print("Values:", student.values())
+
+
+# 3. items()
+# Returns all the key-value pairs.
+
+print("Items:", student.items())
+
+
+# 4. get()
+# Returns the value associated with a specified key.
+
+print("Student Name:", student.get("name"))
+
+
+# 5. update()
+# Adds new key-value pairs or updates an existing value.
+
+student.update({"marks": 90})
+print("After update():", student)
