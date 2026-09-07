@@ -1,1 +1,9 @@
-
+a = int(input())
+b = int(input())
+c = int(input())
+l1 = [a,b,c]
+l = [[i,j,k] for i in l1 for j in l1 for k in l1 if i*i + j*j == k*k and i<j ]
+if l != []:
+    print("It is a right angled triangle")
+else:
+    print("It is not a right angled triangle")
