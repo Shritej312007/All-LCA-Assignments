@@ -1,1 +1,26 @@
+s = input()
+up,lw,di=0,0,0
+for i in s:
+    if i.isupper():
+        up+=1
+    elif i.islower():
+        lw+=1
+    elif i.isdigit():
+        di+=1
 
+print("In string",s,":")
+print("Number of uppercase characters:",up)
+print("Number of lowercase characters:",lw)
+print("Number of alphabets:",up+lw)
+print("Number of digits:",di)
+print("Other characters:",len(s)-(lw+up+di))
+
+
+Output:
+ qA2$%
+In string qA2$% :
+Number of uppercase characters: 1
+Number of lowercase characters: 1
+Number of alphabets: 2
+Number of digits: 1
+Other characters: 2
