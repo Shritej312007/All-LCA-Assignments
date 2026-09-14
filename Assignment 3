@@ -18,3 +18,9 @@ if right_triangle(a, b, c):
     print("The triangle is a right-angled triangle.")
 else:
     print("The triangle is not a right-angled triangle.")
+
+Output:
+Enter first side:  11
+Enter second side:  60
+Enter third side:  61
+The triangle is a right-angled triangle.
