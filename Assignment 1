@@ -121,3 +121,24 @@ print("Student Name:", student.get("name"))
 
 student.update({"marks": 90})
 print("After update():", student)
+
+
+Output:
+Original List: ['Apple', 'Banana', 'Mango', 'Apple']
+After append(): ['Apple', 'Banana', 'Mango', 'Apple', 'Orange']
+After insert(): ['Apple', 'Grapes', 'Banana', 'Mango', 'Apple', 'Orange']
+After remove(): ['Grapes', 'Banana', 'Mango', 'Apple', 'Orange']
+After pop(): ['Grapes', 'Banana', 'Apple', 'Orange']
+After reverse(): ['Orange', 'Apple', 'Banana', 'Grapes']
+Tuple: (10, 20, 30, 20, 40)
+Count of 20: 2
+Index of 30: 2
+Length of tuple: 5
+Largest number: 40
+Smallest number: 10
+Original Dictionary: {'name': 'Shritej', 'age': 18, 'marks': 85}
+Keys: dict_keys(['name', 'age', 'marks'])
+Values: dict_values(['Shritej', 18, 85])
+Items: dict_items([('name', 'Shritej'), ('age', 18), ('marks', 85)])
+Student Name: Shritej
+After update(): {'name': 'Shritej', 'age': 18, 'marks': 90}
